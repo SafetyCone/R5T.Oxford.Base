@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 
-using R5T.Ostrogothia;
+using R5T.Ostrogothia;using R5T.T0064;
 
 
 namespace R5T.Oxford
-{
-    public interface IOrganizationProvider
+{[ServiceDefinitionMarker]
+    public interface IOrganizationProvider:IServiceDefinition
     {
         IOrganization GetOrganization();
     }
